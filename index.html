@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youssef — Electronics &amp; Computer Science Portfolio</title>
+    <meta name="description" content="Portfolio of Youssef, an Electronics and Computer Science student — projects, skills, and contact.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Signal Trace Line -->
+<svg class="trace" width="3" height="100%" viewBox="0 0 3 100" preserveAspectRatio="none" aria-hidden="true">
+  <line x1="1.5" y1="0" x2="1.5" y2="100" />
+</svg>
+<div class="trace-pulse" aria-hidden="true"></div>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#home" class="logo">
+      <span class="logo-mark">◈</span>
+      <span class="logo-text">Youssef<span class="logo-sub">// ECE</span></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primaryNav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="primary-nav" id="primaryNav">
+      <a href="#home" class="nav-pin" data-label="P1">Home</a>
+      <a href="#about" class="nav-pin" data-label="P2">About</a>
+      <a href="#skills" class="nav-pin" data-label="P3">Skills</a>
+      <a href="#projects" class="nav-pin" data-label="P4">Projects</a>
+      <a href="#contact" class="nav-pin nav-pin--cta" data-label="P5">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HOME / HERO ============ -->
+  <section id="home" class="panel panel--navy hero">
+    <div class="section-inner hero-inner">
+      <p class="eyebrow">SIG_00 // ONLINE</p>
+      <h1 class="hero-title">Building things at the edge of <span class="accent">hardware</span> and <span class="accent-alt">code</span>.</h1>
+      <p class="hero-sub">Hi, I'm Youssef — an Electronics and Computer Science student. I design circuits, write software, and enjoy the moment a schematic turns into something that actually runs.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn--primary">View Projects</a>
+        <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+      </div>
+      <div class="scope" aria-hidden="true">
+        <svg viewBox="0 0 400 80" class="scope-wave">
+          <polyline points="0,40 30,40 45,10 60,70 75,20 90,55 105,40 400,40" />
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="panel panel--light about">
+    <div class="section-inner about-inner">
+      <p class="eyebrow eyebrow--dark">SIG_01 // ABOUT</p>
+      <div class="about-grid">
+        <div class="component-card" aria-hidden="true">
+          <div class="component-card_pins component-card_pins--top"></div>
+          <div class="component-card__body">
+            <span class="component-card__label">IC-01</span>
+            <span class="component-card__sub">YOUSSEF</span>
+          </div>
+          <div class="component-card_pins component-card_pins--bottom"></div>
+        </div>
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>I'm currently studying Electronics and Computer Science, working across coursework in circuit design, discrete mathematics, digital logic, and C++ programming. I like solving problems that sit between hardware and software — translating Boolean logic into working physical components.</p>
+          <p>Outside of coursework, I enjoy exploring embedded systems, computer architecture, and modern web development. This site was built by hand using HTML, CSS, and JavaScript.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" class="panel panel--board skills">
+    <div class="section-inner">
+      <p class="eyebrow">SIG_02 // SKILLS</p>
+      <h2 class="panel-title panel-title--light">What I Work With</h2>
+
+      <div class="skills-group">
+        <h3 class="skills-group__title">Software &amp; Web</h3>
+        <ul class="chip-row">
+          <li class="chip">C++</li>
+          <li class="chip">HTML5 / CSS3</li>
+          <li class="chip">JavaScript (ES6+)</li>
+          <li class="chip">Git &amp; GitHub</li>
+        </ul>
+      </div>
+
+      <div class="skills-group">
+        <h3 class="skills-group__title">Electronics</h3>
+        <ul class="chip-row">
+          <li class="chip">Circuit Analysis</li>
+          <li class="chip">Semiconductor Devices</li>
+          <li class="chip">Thévenin &amp; Norton Theorems</li>
+        </ul>
+      </div>
+
+      <div class="skills-group">
+        <h3 class="skills-group__title">Logic &amp; Math</h3>
+        <ul class="chip-row">
+          <li class="chip">Boolean Algebra</li>
+          <li class="chip">Digital Logic Design</li>
+          <li class="chip">Discrete Mathematics</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="panel panel--light projects">
+    <div class="section-inner">
+      <p class="eyebrow eyebrow--dark">SIG_03 // PROJECTS</p>
+      <h2 class="panel-title">Selected Work</h2>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <span class="project-card__ref">U1</span>
+          <h3>Digital Logic Simulator</h3>
+          <p>A web-based tool for simplifying Boolean expressions and generating truth tables for digital logic design.</p>
+          <div class="project-card__links">
+            <a href="#" class="text-link">Live Demo →</a>
+            <a href="#" class="text-link">Source →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <span class="project-card__ref">U2</span>
+          <h3>Rectifier Circuit Analyzer</h3>
+          <p>A calculator and interactive walkthrough for AC/DC half-wave, full-wave, and bridge rectifier circuits.</p>
+          <div class="project-card__links">
+            <a href="#" class="text-link">Live Demo →</a>
+            <a href="#" class="text-link">Source →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <span class="project-card__ref">U3</span>
+          <h3>Portfolio Website</h3>
+          <p>A responsive personal portfolio featuring custom PCB-inspired visual components and validation features.</p>
+          <div class="project-card__links">
+            <a href="#" class="text-link">Live Demo →</a>
+            <a href="#" class="text-link">Source →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="panel panel--navy contact">
+    <div class="section-inner contact-inner">
+      <p class="eyebrow">SIG_04 // CONTACT</p>
+      <h2 class="panel-title panel-title--light">Let's Talk</h2>
+      <p class="hero-sub">Have a project, a question, or an opportunity? Send a message below.</p>
+
+      <form id="contactForm" class="contact-form" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" autocomplete="name" required>
+          <span class="field-error" id="nameError" role="alert"></span>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+          <span class="field-error" id="emailError" role="alert"></span>
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <span class="field-error" id="messageError" role="alert"></span>
+        </div>
+
+        <button type="submit" class="btn btn--primary">Send Message</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="section-inner footer-inner">
+    <p>&copy; <span id="year"></span> Youssef. Built with HTML, CSS &amp; JavaScript.</p>
+    <div class="footer-links">
+      <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
